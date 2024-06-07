@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Jeon</title>
+    <link rel="stylesheet" type="text/css" href="style-main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="frame">
+        <div class="dashboard">
+            <div class="title-section">
+                <div class="canvas-container">
+                    <canvas id="myCanvas"></canvas>
+                    <h1 class="site-name">ChangHyeon Jeon</h1>
+                </div>
+                <h2 class="portfolio-title">Developer Portfolio</h2>
+                <div class="contact-info">
+                    <p class="footer-comment">ckdgus163@gmail.com</p>
+                    <a class="instagram" href="https://www.instagram.com/ch_hye0n/">INSTAGRAM</a>
+                </div>
+                <div id="currentDate" class="date-display"></div> 
+            </div>
+            <div class="menu">
+                <a class="nav-menu" href="Interest.html">Interest</a>
+                <a class="nav-menu" href="FuturePlan.html">Future Plan</a>
+                <a class="nav-menu" href="AboutMe.html">About Me</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateDate() {
+            var now = new Date();
+            document.getElementById("currentDate").innerText = now.toString();
+        }
+        setInterval(updateDate, 1000);
+
+        function drawCanvas() {
+            var canvas = document.getElementById('myCanvas');
+            var title = document.querySelector('.site-name');
+            if (canvas.getContext) {
+                var ctx = canvas.getContext('2d');
+                var padding = 10;
+                canvas.width = title.offsetWidth + padding * 2;
+                canvas.height = title.offsetHeight + padding * 2;
+                ctx.strokeStyle = 'yellowgreen';
+                ctx.lineWidth = 5;
+                ctx.strokeRect(padding, padding, title.offsetWidth, title.offsetHeight);
+            }
+        }
+        window.onload = function() {
+            updateDate();
+            drawCanvas();
+        };
+    </script>
+</body>
+</html>

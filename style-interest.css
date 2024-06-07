@@ -1,0 +1,349 @@
+body {
+    background: url('https://www.imlu.me/_app/immutable/assets/ricky.0922d640.jpg') center center / cover no-repeat fixed;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+}
+
+.frame {
+    margin: 30px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li {
+    display: inline;
+    align-self: center;
+    margin: 0;
+    margin-left: 15px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-name {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+.nav-menu {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 20px;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF009A;
+    transition: 0.3s;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.korean-comment {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.sample {
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.sample:hover {
+    color: #FF009A;
+    transition: color 0.3s;
+}
+
+.highlight {
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.highlight:hover {
+    background-color: pink;
+    color: black;
+    transition: none;
+}
+
+.type1 {
+    font-weight: bold;
+    color: yellowgreen;
+    font-size: 18px;
+}
+
+.type1:hover {
+    background-color: yellowgreen;
+    color: white;
+}
+
+.type2 {
+    font-weight: bold;
+    color: skyblue;
+    font-size: 18px;
+}
+
+.type2:hover {
+    background-color: skyblue;
+    color: white;
+}
+
+.type3 {
+    font-weight: bold;
+    color: orange;
+    font-size: 18px;
+}
+
+.type3:hover {
+    background-color: orange;
+    color: white;
+}
+
+.korean-comment2 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.english-comment {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    font-style: italic;
+    letter-spacing: -0.3px;
+}
+
+.info-section {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.info-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+}
+
+.info-button img {
+    width: 50px;
+    height: 50px;
+}
+
+.info-button:hover {
+    transform: scale(1.1);
+}
+
+.info-content {
+    display: none;
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.info-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recent-works {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.job-posting {
+    margin-top: 20px;
+}
+
+.job-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.sub-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+    list-style-position: inside;
+    display: block;
+}
+
+ul.korean-comment2 li {
+    display: list-item;
+}
+
+.article {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 120px;
+    align-items: center;
+}
+
+.thumbnail {
+    width: 600px;
+}
+
+.article-info {
+    margin: 0px 20px;
+}
+
+.article-name {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.article-name:hover {
+    color: pink;
+    -webkit-text-stroke: 1px black;
+    transition: 0.3s;
+}
+
+.article-comment {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.more {
+    width: content;
+    height: content;
+    float: right;
+    margin-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0px;
+}
+
+#name1 {
+    position: relative;
+    right: 70px;
+}
+
+#name1:hover {
+    color: skyblue;
+}
+
+#name2-1 {
+    text-align: right;
+    position: relative;
+    left: 0px;
+    margin-bottom: 0px;
+}
+
+#name2-2 {
+    text-align: right;
+    position: relative;
+    left: 100px;
+}
+
+#name2-2:hover {
+    color: orange;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin: 20px 0;
+}
+
+/*footer*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.contact {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 40px;
+    border-bottom: 2px solid white;
+}
+
+.links > a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 15px;
+    color: white;
+}
+
+.footer > p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    font-style: italic;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.job-link {
+    color: blue;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.job-link:hover {
+    color: red;
+}

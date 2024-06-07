@@ -1,0 +1,126 @@
+body {
+    background: url('https://www.imlu.me/_app/immutable/assets/ricky.0922d640.jpg') center center / cover no-repeat fixed;
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 60%;
+    position: relative;
+}
+
+.title-section {
+    position: absolute;
+    top: 13%;
+    right: -10%;
+    text-align: right;
+}
+
+.canvas-container {
+    position: relative;
+    display: inline-block;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+.site-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+    position: relative; 
+    z-index: 1; 
+    padding: 10px;
+}
+
+.portfolio-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #FF009A;
+    margin-top: 10px;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.footer-comment {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.instagram {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.instagram:hover {
+    color: #FF009A;
+    transition: 0.3s;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 13%;
+    left: -10%;
+}
+
+.nav-menu {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: white;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF009A;
+    transition: 0.3s;
+}
+
+.date-display {
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 280px;
+}

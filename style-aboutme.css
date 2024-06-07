@@ -1,0 +1,280 @@
+body {
+    background: url('https://www.imlu.me/_app/immutable/assets/ricky.0922d640.jpg') center center / cover no-repeat fixed;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+}
+
+.frame {
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+li {
+    display: inline;
+    align-self: center;
+    margin: 0;
+    margin-left: 15px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-name {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+.nav-menu {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 20px;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF009A;
+    transition: 0.3s;
+}
+
+.portfolio-title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-top: 20px;
+}
+
+.tab-menu {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tab-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.tab-link:hover, .tab-link.active {
+    background-color: #FFA500;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.tab-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.tab-content p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    position: relative;
+    margin: 20px 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #FFA500;
+    z-index: -1;
+}
+
+.timeline-event {
+    position: relative;
+    display: inline-block;
+    margin: 0 20px;
+    width: 140px;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.timeline-event.active .timeline-box {
+    background: #76472d;
+    color: #FFF;
+    width: 160px;
+    height: 70px;
+}
+
+.timeline-box {
+    width: 100%;
+    height: 100%;
+    background: #FFA500;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+
+.timeline-label {
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.timeline-content {
+    display: none;
+    margin-top: 40px;
+}
+
+.active-tab {
+    display: block;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.contact {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 40px;
+    border-bottom: 2px solid white;
+}
+
+.links > a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.footer > p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    font-style: italic;
+    margin: 0;
+    margin-top: 5px;
+    color: white;
+}
+
+.footer-comment {
+    text-align: center;
+}
+
+a[title="Freepik"]:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a[title="Flaticon"]:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h2 {
+    margin-top: 0;
+}
+
+.content-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+}
+
+.image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .content-wrapper img {
+        display: none;
+    }
+}
