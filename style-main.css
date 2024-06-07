@@ -90,6 +90,19 @@ canvas {
     transition: 0.3s;
 }
 
+.github {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.github:hover {
+    color: #FF009A;
+    transition: 0.3s;
+}
+
 .menu {
     display: flex;
     flex-direction: column;
